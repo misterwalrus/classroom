@@ -40,7 +40,7 @@ function initialize() {
         app.use('/api',apirouter);
         app.use('/',navrouter);
 	console.log('sevice_url:',cas.service_url);
-        app.get('/classRoom',cas.bounce,(req,res)=>{res.end("Welcome")});
+        app.get('/classRoom',cas.bounce,(req,res)=>{res.end("Welcome Edgar")});
 
         httpServer.listen(webServerConfig.port)
         .on('listening', ()=>{
